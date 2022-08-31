@@ -1,0 +1,179 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Music Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Music Survey</h1>
+    <p id="description">This survey is about the music you listen to and instruments you play.</p>
+    <form id="survey-form">
+      <fieldset>
+        <div>
+          <label id="name-label">Enter Your Name: <input id="name" type="text" placeholder="Name" required/></label>
+        </div>
+        <div>
+          <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder="Email" required/></label>
+        </div>
+        <div>
+          <label id="number-label">Enter Your Age: <input id="number" type="number" min="5" max="120" placeholder="Age"/></label>
+        </div>
+      </fieldset>
+      <fieldset>What is your favorite genre of music?
+        <div>
+          <select id="dropdown">
+            <option value="" disabled selected>Select One...</option>
+            <option value="1">Pop</option>
+            <option value="2">Rap/HipHop</option>
+            <option value="3">Country</option>
+            <option value="4">Jazz</option>
+            <option value="5">EDM</option>
+            <option value="6">Other</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>Do you play an instrument?
+        <div>
+          <input type="radio" name="play-instrument" id="yes" value="yes" required/><label for="yes"> Yes</label>
+          <input type="radio" name="play-instrument" id="no" value="no"/><label for="no"> No</label>
+        </div>
+      </fieldset>
+      <fieldset>If yes, what instruments do you play?
+        <div>
+          <input type="checkbox" id="piano" value="piano"/><label for="piano"> Piano</label>
+          <input type="checkbox" id="guitar" value="guitar"/><label for="guitar"> Guitar</label>
+          <input type="checkbox" id="bass" value="bass"/><label for="bass"> Bass</label>
+          <input type="checkbox" id="ukulele" value="ukulele"/><label for="ukulele"> Ukulele</label>
+          <input type="checkbox" id="woodwinds" value="woodwinds"/><label for="woodwinds"> Woodwinds</label>
+          <input type="checkbox" id="brass" value="brass"/><label for="brass"> Brass</label>
+          <input type="checkbox" id="strings" value="strings"/><label for="strings"> Strings</label>
+          <input type="checkbox" id="other" value="other"/><label for="other"> Other</label>
+        </div>
+      </fieldset>
+      <fieldset>Any additional information or comments?
+        <textarea rows="3" cols="30" placeholder="Add additional information or comments here..."></textarea>
+      </fieldset>
+      <fieldset>
+        <input type="Submit" id="submit"
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  font-family: Sans-Serif;
+  font-size: 18px;
+  color: #f5f6f7;
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#title {
+  margin: 1em 0 0.5em 0;
+  font-size: 40px;
+}
+
+#description {
+  width: 70%;
+  min-width: 200px;
+  max-width: 600px;
+  margin: 1em auto;
+  font-size: 15px;
+}
+
+fieldset {
+  border: none;
+  border-top: 1px solid white;
+  padding: 1em 0;
+  margin: auto;
+  text-align: center;
+}
+
+fieldset:last-of-type {
+  border: none;
+  padding: 2em 0 0 0;
+}
+
+form {
+  margin: 0 auto;
+  width: 70%;
+  min-width: 200px;
+  max-width: 600px;
+}
+
+input, textarea {
+  background-color: #3b3b4f;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+}
+
+textarea {
+  display: block;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+label {
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+select, div {
+  display: block;
+  margin: 0.5em auto;
+  text-align: center;
+}
+
+select {
+  width: 30%;
+  min-width: 100px;
+  max-width: 300px;
+  min-height: 2em;
+}
+
+input {
+  margin: 1em auto;
+  vertical-align: middle;
+  height: 2em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-left: 2em;
+}
+
+input[type="radio"]:first-of-type, input[type="checkboc"]:first-of-type {
+  margin-left: 0;
+}
+
+input[type="Submit"] {
+  display: block;
+  width: 60%;
+  min-width: 300px;
+  margin: -2em auto 2em auto;
+  height: 2em;
+  font-size: 1.1em;
+  text-align: center;
+  background-color: #3b3b4f;
+  border-color: #ffffff;
+}
+
+** end of undefined **
+
